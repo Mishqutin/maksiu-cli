@@ -149,8 +149,6 @@ void init() {
     new_ = old;
     new_.c_lflag &= ~(ICANON | ECHO | IGNBRK);
     tcsetattr(TCSANOW, 0, &new_);
-
-    cin.sync_with_stdio(false);
 }
 
 void sub() {
